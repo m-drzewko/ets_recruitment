@@ -30,4 +30,5 @@ The application uses the following technologies:
 - Maven 3.9.3
 - Thymeleaf 3.0.15
 - JUnit 5.9.3
+
 The application uses Maven 3.9.3 as the build automation tool.
