@@ -1,0 +1,16 @@
+* {
+    font-family: sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+.desc {
+    padding-bottom: 15px;
+}
+
+form {
+    padding: 10px;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/assets/css/styles.css}" type="text/css" rel="stylesheet">
+    <title>Prime Number Generator</title>
+</head>
+<body>
+    <h2 id="title">Prime number generator</h2>
+    <div class="desc">
+        Enter a number that will be the upper boundary of a set of prime numbers (inclusive).
+    </div>
+    <div class="desc">
+        You can use the Clear button to clear the previous results.
+    </div>
+    <div id="form">
+        <form method="get" th:action="@{/prime}">
+            <label for="boundary">Boundary: </label>
+            <input id="boundary" name="boundary" type="number" min="0" required>
+            <button type="submit">Submit</button>
+        </form>
+        <form th:action="@{/}" method="get">
+            <button type="submit">Clear</button>
+        </form>
+    </div>
+    <div th:if="${visible}" id="results">
+        <h3 th:text="'Results for boundary ' + ${boundary} + ':'"></h3>
+        <span th:each="prime, iterStat : ${primes}" th:text="!${iterStat.last} ? ${prime} + ', ' : ${prime}"></span>
+    </div>
+</body>
+</html>
