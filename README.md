@@ -13,7 +13,7 @@ To run the application, follow the below steps:
 1. Download the source code locally, unzip the package and save it in the desired location.
 2. Open your preferred terminal.
 3. In the terminal, navigate to the location were the package has been saved (e.g. `C:\your\Path\To\Code\ets_recruitment`).
-4. Run the following command: `mvn spring-boot:run`.
+4. Run the following command to start the application: `mvn spring-boot:run`.
 5. To access the application, open your preferred web browser, put `localhost:8080` in the address bar, then hit `Enter`.
 6. The application is ready to use!
 
