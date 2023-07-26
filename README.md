@@ -8,11 +8,13 @@ The following tools need to be installed on you machine in order for the applica
 - Java 11 or higher
 - [Maven](https://maven.apache.org) (version 3.9.3)
 
+Please also remember to correctly set up environment variables for the above tools!
+
 ## Running the application
 To run the application, follow the below steps:
 1. Download the source code locally, unzip the package and save it in the desired location.
 2. Open your preferred terminal.
-3. In the terminal, navigate to the location were the package has been saved (e.g. `C:\your\Path\To\Code\ets_recruitment`).
+3. In the terminal, open the directory were the package has been saved (e.g. `C:\your\Path\To\Code\ets_recruitment`).
 4. Run the following command to start the application: `mvn spring-boot:run`.
 5. To access the application, open your preferred web browser, put `localhost:8080` in the address bar, then hit `Enter`.
 6. The application is ready to use!
